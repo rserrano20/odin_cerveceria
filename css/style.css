@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagina {
+    position: relative;
+    top: 126px;
+}
+
+.efectoimg:hover{
+    filter: opacity(50%);
+    transition: 150ms;
+}
+
+footer {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    bottom: 16px;
+}
+

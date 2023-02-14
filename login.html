@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luciano Chipolina, Rosario Serrano, Tomás Quiroga, Matías Gómez">
+    <meta name="keywords"
+        content="cerveza, cerveza artesanal, blog de cerveza, criticos de cerveza, blog, criticos, critica">
+    <meta name="description"
+        content="Página de Login de Odín - Críticos de cerveza">
+    <title>Odín - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1ef17451d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" width="100px" alt="logo" class="rounded-circle"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                        Suscribirse
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pagina">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Login</li>
+            </ol>
+        </nav>
+        <section class="container">
+            <article class="row">
+                <div class="col-md-6 col-sm-12 mb-3 mt-3 shadow p-3 mb-5 bg-white rounded">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email:</label>
+                            <input type="email" placeholder="tucorreo@email.com" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success mb-3">Ingresar</button><br>
+                            <a href="error404.html" class="text-light"><button type="button" class="btn btn-primary my-2">Ingresar con Facebook</button></a><br>
+                            <a href="error404.html" class="text-light"><button type="button" class="btn btn-danger">Ingresar con Google</button></a><br>
+                            <button type="button" class="btn btn-warning btn-sm mt-4" data-toggle="modal"
+                                data-target="#exampleModalCenter"><small>Recuperar contraseña</small>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                    <img src="img/avatar-formulario.png" alt="Odín" width="85%">
+                </div>
+            </article>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <form>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Suscribirse</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nombre y apellido:</label>
+                                <input type="text" class="form-control" placeholder="Juan Perez" id="exampleInputUser"
+                                    aria-describedby="userHelp" required>
+                                <small id="userHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Email:</label>
+                                <input type="email" class="form-control" placeholder="tucorreo@email.com" id="exampleInputPassword1" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones de
+                                    la
+                                    página.</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-success">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="bg-dark text-light py-4">
+            <article class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                        <img src="img/logo.png" alt="Logo de Odin" width="100px" class="rounded-circle">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <p><strong>Encontranos en:</strong></p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6479702929337!2d-65.20659268529643!3d-26.81933549577493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c3d161d9c3f%3A0x32650c151eb5e7f7!2sSta.%20Fe%20589%2C%20T4000ENM%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1588635721591!5m2!1ses!2sar"
+                            width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                        <p><strong>Redes sociales:</strong></p>
+                        <p><a href="https://facebook.com" class="text-light" target="_blank"><i class="fab fa-facebook text-light"></i>
+                                Facebook</a><br><a href="https://instagram.com" class="text-light" target="_blank"><i
+                                    class="fab fa-instagram text-light"></i> Instagram</a></p>
+                    </div>
+                </div>
+            </article>
+        </footer>
+    </div>
+    <!-- Modal Recuperar contraseña -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Pasos para recuperar contraseña</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Envía un mail a soporte@odin.com con asunto "Recuperar contraseña" y adjuntar el nombre de
+                            usuario y mail con el que estás registrado</li>
+                        <li class="my-3">Espera una respuesta dentro de las 48 hs hábiles.</li>
+                        <li>Ingresa la nueva contraseña que se te ha asignado.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--libreria de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
